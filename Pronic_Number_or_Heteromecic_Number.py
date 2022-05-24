@@ -1,9 +1,9 @@
-a=int(input())
+n=int(input())
 c=0
-for i in range (1, a):
-    if(a==i*(i+1)):
-        c=1
-if(c==1):
+for i in range(1,n):
+    if(i*(i+1)==n):
+        c+=1
+if(c>0):
     print("YES")
 else:
     print("NO")
