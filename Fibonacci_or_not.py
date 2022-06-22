@@ -1,15 +1,15 @@
 n=int(input())
-n1=0
-n2=1
-n3=1
-c=0
-for i in range(0, n):
-    n3=n1+n2
-    n1=n2
-    n2=n3
-    if(n==n1):
-        c=1
-if(c==1):
+a=0
+b=1
+c=1
+k=0
+for i in range(n):
+    if(n==a):
+        k=1
+    a=b
+    b=c
+    c=a+b
+if(k==1):
     print("True")
 else:
     print("False")
