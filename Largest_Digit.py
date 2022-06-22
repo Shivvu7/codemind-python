@@ -1,8 +1,8 @@
 n=int(input())
-k=0
+t=0
 while(n):
     d=n%10
-    if(d>k):
-        k=d
-    n=n//10
-print(k)
+    if(d>t):
+        t=d
+    n//=10
+print(t)
