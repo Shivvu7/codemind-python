@@ -7,10 +7,11 @@ def fun(n):
     return c
 n=int(input())
 a=list(map(int,input().split()[:n]))
+c=0
 k=[]
 for i in a:
-    b=(fun(i))
-    k.append(b)
-    c=max(k)
-    res=k.count(c)
-print(res)
+    k.append(fun(i))
+m=max(k)
+for i in k:
+    print(k.count(m))
+    break
