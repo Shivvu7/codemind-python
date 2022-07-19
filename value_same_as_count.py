@@ -1,8 +1,11 @@
 n=int(input())
 a=list(map(int,input().split()[:n]))
-l=[]
+c=0
+k=[]
 for i in a:
     if a.count(i)==i:
-        l.append(i)
-s=set(l)
-print(len(s))
+        k.append(i)
+s=set(k)
+for i in s:
+    c+=1
+print(c)
