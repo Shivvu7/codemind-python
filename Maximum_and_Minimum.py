@@ -1,10 +1,10 @@
 n=int(input())
 a=list(map(int,input().split()[:n]))
-l=[]
+k=[]
 for i in a:
     if a.count(i)==i:
-        l.append(i)
-if len(l)==0:
+        k.append(i)
+if len(k)==0:
     print(-1)
 else:
-    print(min(l),max(l))
+    print(min(k),max(k))
